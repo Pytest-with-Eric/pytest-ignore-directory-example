@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "distance_calculator"
+version = "0.1.0"
+description = "Simple Distance Calculator"
+authors = ["ericsalesdeandrade <sdaeric19@gmail.com>"]
+readme = "README.md"
+python = "^3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v"
+filterwarnings = "ignore"
+
+# Specifying the directory to ignore
+norecursedirs =  "tests/in_progress tests/upcoming_modules"
+
+# Specify a custom directory for pytest cache
+cache_dir = ".pytest_cache"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4"
+tox = "^4.11.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
