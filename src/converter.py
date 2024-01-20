@@ -13,13 +13,13 @@ def meter_to_centimeter(m: float) -> float:
 
 def foot_to_inch(f: float) -> float:
     """
-    Function to convert Meter to Centimeter
+    Function to convert Foot to Inch
     """
     return f * 12
 
 def inch_to_foot(i: float) -> float:
     """
-    Function to convert Meter to Centimeter
+    Function to convert Inch to Foot
     """
     return i / 12
 
