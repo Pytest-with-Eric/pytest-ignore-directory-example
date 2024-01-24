@@ -13,12 +13,11 @@ def test_foot_to_inch():
 def test_inch_to_foot():
     assert inch_to_foot(12) == 1
 
-@pytest.mark.skip(reason="We didn't create any millimeter_to_centimeter() function")
+@pytest.mark.skip(reason="We didn't completed millimeter_to_centimeter() function")
 def test_millimeter_to_centimeter():
     assert millimeter_to_centimeter(10) == 1
 
 
-# We didn't create any millimeter_to_centimeter() function. So, we're declaring this test as FAIL
-@pytest.mark.xfail
+@pytest.mark.xfail(reason="We didn't create any centimeter_to_millimeter() function. So, we're declaring this test as FAIL")
 def test_centimeter_to_millimeter():
     assert centimeter_to_millimeter(10) == 1
